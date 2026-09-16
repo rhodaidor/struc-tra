@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@variant dark (&:where(.dark, .dark *));
+
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+
+/* Dark mode custom scrollbars */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0d0e12;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #252833;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #353948;
+}
+
+.dark ::selection {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* docx-preview custom page styles */
+.docx-wrapper {
+  background: transparent !important;
+  padding: 0 !important;
+}
+.docx-wrapper > section.docx {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 8px !important;
+  margin: 0 auto 24px auto !important;
+  padding: 2.5rem !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}

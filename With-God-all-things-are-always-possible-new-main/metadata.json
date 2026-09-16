@@ -1,0 +1,10 @@
+{
+  "name": "Remix Structra",
+  "description": "AI-powered document intelligence platform for instant document retrieval, indexing, and smart organization across Gmail, Telegram, and uploads.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

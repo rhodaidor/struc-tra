@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
+  <defs>
+    <linearGradient id="appicon-bg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <linearGradient id="appicon-ribbon" x1="180" y1="80" x2="820" y2="920" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+
+    <linearGradient id="appicon-doc" x1="420" y1="230" x2="680" y2="550" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1024" height="1024" rx="224" fill="url(#appicon-bg)" />
+
+  <!-- S Ribbon Icon centered -->
+  <g transform="translate(112, 112) scale(3.33)">
+    <!-- 4 Transitioning Pixels -->
+    <rect x="20" y="112" width="8" height="8" rx="2.5" fill="#7C3AED" opacity="0.55" />
+    <rect x="34" y="96" width="10" height="10" rx="3" fill="#8B5CF6" opacity="0.75" />
+    <rect x="50" y="80" width="12" height="12" rx="3.5" fill="#6366F1" opacity="0.90" />
+    <rect x="68" y="64" width="14" height="14" rx="4" fill="#3B82F6" opacity="1.0" />
+
+    <!-- Integrated Document Card -->
+    <rect x="100" y="54" width="56" height="76" rx="10" fill="url(#appicon-doc)" stroke="#CBD5E1" stroke-width="2" />
+    <path d="M 142 54 V 68 H 156 L 142 54 Z" fill="#94A3B8" />
+
+    <line x1="112" y1="78" x2="142" y2="78" stroke="#7C3AED" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="112" y1="92" x2="138" y2="92" stroke="#6366F1" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="112" y1="106" x2="130" y2="106" stroke="#2563EB" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- 20% Thicker S Ribbon Loop -->
+    <path
+      d="M 176 52 C 176 32, 140 22, 114 28 C 86 34, 74 62, 84 90 C 96 122, 156 126, 172 152 C 188 178, 174 208, 138 218 C 102 228, 76 210, 80 192"
+      stroke="url(#appicon-ribbon)"
+      stroke-width="32"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+</svg>
